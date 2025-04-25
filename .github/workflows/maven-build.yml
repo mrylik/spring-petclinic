@@ -31,5 +31,5 @@ jobs:
         uses: Madrapps/jacoco-report@v1.7.2-beta
         with:
           # Comma separated paths of the generated jacoco xml files (supports wildcard glob pattern)
-          paths: target/jacoco
+          paths: target/site/jacoco/jacoco.xml
           token: ${{secrets.TOKEN}}
