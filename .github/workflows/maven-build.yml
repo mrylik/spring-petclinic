@@ -32,4 +32,4 @@ jobs:
         with:
           # Comma separated paths of the generated jacoco xml files (supports wildcard glob pattern)
           paths: target/jacoco
-
+          token: ${{secrets.TOKEN}}
