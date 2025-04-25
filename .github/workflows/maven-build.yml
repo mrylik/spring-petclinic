@@ -27,5 +27,9 @@ jobs:
           cache: maven
       - name: Build with Maven Wrapper
         run: ./mvnw -B verify
-      - name: Build with Maven Wrapper
-        run: ./mvnw -B test
+      - name: JaCoCo Report
+        uses: Madrapps/jacoco-report@v1.7.2-beta
+        with:
+          # Comma separated paths of the generated jacoco xml files (supports wildcard glob pattern)
+          paths: target/jacoco
+
